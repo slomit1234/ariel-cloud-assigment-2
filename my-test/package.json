@@ -1,0 +1,19 @@
+{
+  "name": "my-test",
+  "version": "1.0.0",
+  "main": "test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "assert": "^2.1.0",
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
