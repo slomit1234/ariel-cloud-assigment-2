@@ -35,7 +35,6 @@ const regions =  [
 ];
 const requestCount = 5; // Adjust as needed
 
-// Function to make HTTP requests
 const sendHttpRequest = (options, postData = null) => {
     return new Promise((resolve, reject) => {
         const req = http.request(options, (res) => {
@@ -196,7 +195,6 @@ const loadTest = async () => {
     }
 };
 
-// Jest test runner wrapper
 describe('Load tests for Restaurant API', () => {
     it('should run load tests without errors', async () => {
         await loadTest();
