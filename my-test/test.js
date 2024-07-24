@@ -6,29 +6,33 @@ const serverPort = 80;
 
 const baseRestaurantName = 'RestAurantTest';
 const cuisines = [
-    "Italian", "Cnhiese", "Jpanese", "Mxeican", "Idnian",
-    "Fnrech", "Thia", "Snanish", "Grkeek", "Lbeanese",
-    "Trukish", "Mraccocan", "Veitnamese", "Koeran", "Cabirbean",
-    "Bazilian", "Etihopian", "Rusisan", "Grman", "Cuan",
-    "Aerican", "Brtish", "Potruguese", "Atgentinian", "Pervian",
-    "Sweidh", "Indoneisian", "Mlayasian", "Filpiino"
+    "American", "Argentinian", "Australian", "Austrian", "Belgian",
+    "Brazilian", "British", "Bulgarian", "Canadian", "Caribbean",
+    "Chinese", "Cuban", "Czech", "Dutch", "Egyptian",
+    "Ethiopian", "Filipino", "French", "German", "Greek",
+    "Hungarian", "Indian", "Indonesian", "Iranian", "Iraqi",
+    "Israeli", "Italian", "Japanese", "Jordanian", "Korean",
+    "Lebanese", "Malaysian", "Mexican", "Moroccan", "New Zealand",
+    "Peruvian", "Polish", "Portuguese", "Romanian", "Russian",
+    "Saudi Arabian", "Slovak", "South African", "Spanish", "Swedish",
+    "Swiss", "Thai", "Turkish", "Ukrainian", "Vietnamese"
 ];
 
-const regions = [
-    "Arad", "Ariel", "Asddod", "Asekelon",
-    "BatYam", "Bersheba", "BetShemesh", "BetShean", "BneiBrak",
-    "Dimna", "Elait", "Givatayim", "Hdadera", "Haifa",
-    "Hreliya", "HdHaSharon", "Hooln", "Jeruslaem", "Krmiel",
-    "KfarSaba", "KiryatAta", "KirytBialik", "KiryatGat", "KiryatMlahi",
-    "KiryatMtozkin", "KiryatOno", "KiryatShmona", "KiryatYma", "Lod",
-    "MalaeAdumim", "MgidalHaEmek", "ModiinMaccabimReut", "ModiinIllit", "Nhariya",
-    "Nazareht", "NazarehtIllit", "Nesher", "NessZioan", "Ntanya",
-    "Netivot", "Ofakim", "OrAkiav", "PetahTikva", "Raanan",
-    "Rhtaat", "RamtGan", "RamtHaSharon", "Ramla", "Rehovto",
-    "RisonLeZion", "RoshHaAyin", "Safde", "Sderto", "TlAviv",
-    "Tibrieas", "Tira", "Tzfat", "Yvane", "Ykoneam"
+const regions =  [
+    "Afula", "Arad", "Ariel", "Ashdod", "Ashkelon",
+    "Baqa al-Gharbiyye", "Bat Yam", "Beersheba", "Beit She'an", "Beit Shemesh",
+    "Bnei Brak", "Carmiel", "Dimona", "Eilat", "El'ad",
+    "Givatayim", "Givat Shmuel", "Hadera", "Haifa", "Herzliya",
+    "Hod HaSharon", "Holon", "Jerusalem", "Karmiel", "Kfar Saba",
+    "Kiryat Ata", "Kiryat Bialik", "Kiryat Gat", "Kiryat Malakhi", "Kiryat Motzkin",
+    "Kiryat Ono", "Kiryat Shmona", "Kiryat Yam", "Lod", "Ma'ale Adumim",
+    "Migdal HaEmek", "Modiin-Maccabim-Reut", "Nahariya", "Nazareth", "Netanya",
+    "Nesher", "Ness Ziona", "Netivot", "Ofakim", "Or Akiva",
+    "Petah Tikva", "Raanana", "Ramat Gan", "Ramat HaSharon", "Ramla",
+    "Rehovot", "Rishon LeZion", "Rosh HaAyin", "Safed", "Sderot",
+    "Shefa-Amr", "Tamra", "Tayibe", "Tel Aviv", "Tiberias",
+    "Tira", "Tirat Carmel", "Yavne", "Yokneam"
 ];
-
 const requestCount = 5; // Adjust as needed
 
 // Function to make HTTP requests
